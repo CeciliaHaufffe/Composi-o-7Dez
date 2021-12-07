@@ -27,5 +27,6 @@ public class Motor {
     public void setPotencia(int potencia) {
         this.potencia = potencia;
     }
-    
+
+ 
 }

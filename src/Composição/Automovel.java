@@ -10,13 +10,26 @@ package Composição;
  */
 public class Automovel {
     Motor motor;
-    private Direção direção; 
-    
+    Direção direção; 
+
+    void imptimirdadoscarro1 (){
+        System.out.println ("UNO");
+        System.out.println ("Cor : "+direção.cor);
+        System.out.println ("Motor:" +motor.potencia );
+         
+    }
+    void imptimirdadoscarro2 (){
+        System.out.println ("GOLF");
+        System.out.println ("Cor : "+direção.cor);
+        System.out.println ("Motor:" +motor.potencia );
+    }
     public void LigarPelaPrimeiraVez (){
         motor = new Motor ();
+        direção = new Direção ();
     }
-    public void LigarPelaPrimeiraVez (int potencia){
+    public void LigarPelaPrimeiraVez (int potencia, String cor){
         motor = new Motor (potencia);
+        direção = new Direção (cor);
     }
     public Automovel (){
         motor = new Motor ();
@@ -24,4 +37,5 @@ public class Automovel {
     public Automovel (int potencia){
         motor = new Motor (potencia);
 }
-}
+    }
+

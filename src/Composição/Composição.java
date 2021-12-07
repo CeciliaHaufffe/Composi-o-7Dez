@@ -12,22 +12,11 @@ package Composição;
  */
 public class Composição {
     public static void main (String []args) {
-            
-   // Ptirmeira Forma
-    Automovel uno = new Automovel();
-    Automovel Golf = new Automovel (2000);
-    
-   //Segunda Forma
-    Automovel carro = new Automovel();
-    carro.LigarPelaPrimeiraVez();
-    carro.LigarPelaPrimeiraVez(1600);
-   
-   //Terceira Forma
-     Automovel moto = new Automovel ();
-     Motor motor = new Motor();
-     Motor motor2 = new Motor(1600);
-    
-            
      
+        Automovel carro = new Automovel ();
+        Automovel carro2 = new Automovel (1500 , "Verde");
+   
+       carro.imptimirdadoscarro1 ();
+       carro2.imptimirdadoscarro2();
 }
 }

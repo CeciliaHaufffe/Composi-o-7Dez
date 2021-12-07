@@ -10,8 +10,14 @@ package Composição;
  * @author IFSC
  */
 public class Direção {
-   private String cor;
-
+ String cor;
+   
+   public Direção(){
+       cor = "Amarelo";
+   }
+ public Direção (String cor){
+     this.cor = cor; 
+ }
     public String getCor() {
         return cor;
     }
